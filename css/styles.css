@@ -4,6 +4,7 @@
     --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575;
+    --gris-claro:#dfe9f3;
     
 }
 
@@ -11,6 +12,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    background-image:linear-gradient(to top, var(--gris-claro) 0%,var(--blanco)100%);
 }
 
 *, *::before, *::after {
@@ -45,6 +47,15 @@ body {
         width: auto;
     }
 }
+
+.sombra{
+    -webkit-box-shadow: 0px 7px 24px 0px rgba(62,63,66,0.35);
+    -moz-box-shadow: 0px 7px 24px 0px rgba(62,63,66,0.35);
+    box-shadow: 0px 7px 24px 0px rgba(62,63,66,0.35);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: .5rem;
+}
 /*tipografía*/
 h1{
     font-size: 3.8rem;
@@ -64,6 +75,7 @@ h1,h2,h3{
     font-size: 2rem;
 }
 
+/*navegación principal*/
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -95,13 +107,15 @@ h1,h2,h3{
     color: var(--oscuro);
 }
 
+/*Hero*/
+
 .hero {
     background-image: url('../img/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 410px;
     position: relative;
-    
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
